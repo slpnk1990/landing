@@ -1,62 +1,60 @@
 {% extends 'landing/base_page.html' %}
+{% load static %}
 
 
-{% block DePaletra %}
+{% block content %}
 <!-- DePaletra-->
-<section class="section section-full section-inset-1 bg-default text-center bg-image background-position-1" id="home" style="background-image: url(images/bg-image-1-1920x800.jpg)">
+<meta charset="utf-8">
+<section class="section section-full section-inset-1 bg-default text-center bg-image background-position-1" id="home" style="background-image: url('{% static 'images/bg-image-1-1920x800.jpg' %}')">
   <div class="container">
     <div class="title-style-1-wrap">
       <div class="oh-desktop wow slideInLeft">
-        <h1 class="title-style-1 wow slideInRight">DePaletra</h1>
+        <h1 class="title-style-1 wow slideInRight">{{ title_style_1 }}</h1>
       </div>
     </div>
     <div class="title-style-2-wrap">
       <div class="oh-desktop wow slideInRight">
-        <h5 class="title-style-2 wow slideInLeft">Web Design Studio</h5>
+        <h5 class="title-style-2 wow slideInLeft">{{ title_style_2 }}</h5>
       </div>
-    </div><a class="button button-default wow fadeInUp" href="about.html">More about us</a>
+    </div><a class="button button-default wow fadeInUp" href="{% url 'about' %}">{{ button_button_default }}</a>
   </div>
 </section>
-{% endblock %}
 
-{% block AboutUs %}
 <!-- About Us-->
 <section class="section section-full section-xxl bg-default" id="about">
   <div class="container">
     <div class="row row-30 justify-content-center">
       <div class="col-sm-9 col-md-5 cube-classic-wrap">
-        <div class="subtitle-classic wow fadeInLeft">Welcome to our website!</div>
-        <h2 class="wow fadeInLeft">Our creativity <br class="d-none d-md-block"><span class="text-primary">is your</span> start of <br class="d-none d-md-block">successful projects
+        <div class="subtitle-classic wow fadeInLeft">{{ subtitle_classic }}</div>
+        <h2 class="wow fadeInLeft">{{ wow_fadeInLeft_1 }} <br class="d-none d-md-block"><span class="text-primary">{{ wow_fadeInLeft_1_1 }}</span> {{ wow_fadeInLeft_1_2 }} <br class="d-none d-md-block">{{ wow_fadeInLeft_1_3 }}
         </h2>
         <div class="cube-classic cube-classic-1"><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span>
         </div>
       </div>
       <div class="col-md-7 col-lg-6 col-xl-5">
-        <p class="wow fadeInRight">DePaletra is a creative design studio founded in 1999. We specialize in creating custom Web Design & Development, Graphic Design, Brand Development, Online Marketing, and SEO as our core services. Our team works flawlessly and timely to create a website of your dream in a time that meets your deadlines and preferences.</p>
-        <p class="wow fadeInRight">We are a team of top industry leaders with years of experience in web design and development who strive for creating websites that attract the attention of your potential customers and business partners.</p><a class="wow fadeInRight button button-default" href="about.html">More about us</a>
+        <p class="wow fadeInRight">{{ wow_fadeInRight_1 }}</p>
+        <p class="wow fadeInRight">{{ wow_fadeInRight_2 }}</p><a class="wow fadeInRight button button-default" href="{% url 'about' %}">{{ wow_fadeInRight_button }}</a>
       </div>
     </div>
   </div>
 </section>
-{% endblock %}
 
-{% block Selectedworks %}
 <!-- Selected works-->
 <section class="section section-full section-md bg-gray-100 section-background-custom" id="works">
   <div class="container">
     <div class="row row-30 justify-content-center justify-content-lg-end align-items-md-center">
       <div class="col-sm-8 col-md-6 col-lg-5 cube-classic-wrap">
-        <div class="subtitle-classic wow fadeInLeft">Selected works</div>
-        <h2 class="wow fadeInLeft" data-wow-delay=".1s">Check out the <br class="d-none d-md-block">latest projects <br class="d-none d-md-block">we completed
+        <div class="subtitle-classic wow fadeInLeft">{{ subtitle_classic_2 }}</div>
+        <h2 class="wow fadeInLeft" data-wow-delay=".1s">{{ wow_fadeInLeft_2 }} <br class="d-none d-md-block">{{ wow_fadeInLeft_2_1 }} <br class="d-none d-md-block">{{ wow_fadeInLeft_2_2 }}
         </h2>
-        <p class="wow fadeInLeft">Our team works on a wide variety of web design & development projects every day. We deliver quality solutions for your websites that are based on our boundless creativity and your needs.</p>
+        <p class="wow fadeInLeft">{{ wow_fadeInLeft_3 }}</p>
         <div class="cube-classic cube-classic-2"><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span><span class="cube-classic-item"></span>
         </div>
       </div>
       <div class="col-sm-8 col-md-6 wow blurIn">
         <div class="inset-xl-left-25">
           <!-- Owl Carousel-->
-          <div class="owl-carousel owl-style-1" data-loop="true" data-items="1" data-nav="true"><img src="images/index-1-618x614.jpg" alt="" width="618" height="614"/><img src="images/index-2-618x614.jpg" alt="" width="618" height="614"/><img src="images/index-3-618x614.jpg" alt="" width="618" height="614"/>
+          <div class="owl-carousel owl-style-1" data-loop="true" data-items="1" data-nav="true"><img src="{% static 'images/index-1-618x614.jpg' %}" alt="" width="618" height="614"/><img src="{% static 'images/index-2-618x614.jpg' %}" alt="" width="618" height="614"/><img src="{% static 'images/index-3-618x614.jpg' %}" alt="" width="618" height="614"/>
           </div>
         </div>
       </div>
@@ -64,77 +62,75 @@
   </div>
   <div class="background-custom-1 bg-default"></div>
 </section>
-{% endblock %}
 
-{% block Portfolio %}
  <!-- Portfolio-->
  <section class="section section-full section-xl bg-default text-md-center" id="projects">
   <div class="container">
-    <div class="subtitle-classic wow fadeInUp">Portfolio</div>
-    <h2><span class="d-inline-block wow fadeInLeft">Our featured</span> <span class="text-primary d-inline-block wow fadeInRight">projects</span>
+    <div class="subtitle-classic wow fadeInUp">{{ subtitle_classic_3 }}</div>
+    <h2><span class="d-inline-block wow fadeInLeft">{{ d_inline_block }}</span> <span class="text-primary d-inline-block wow fadeInRight">{{ d_inline_block_2 }}</span>
     </h2>
     <div class="row row-lg row-30">
       <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".2s">
-        <article class="project-classic box-md"><img src="images/project-1-370x262.jpg" alt="" width="370" height="262"/>
+        <article class="project-classic box-md"><img src="{% static 'images/project-1-370x262.jpg' %}" alt="" width="370" height="262"/>
           <div class="project-classic-caption">
             <div>
-              <h4 class="project-classic-title"><a href="#">iStep Ltd.</a></h4>
-              <div class="project-classic-tag">Web Design</div>
+              <h4 class="project-classic-title"><a href="#">{{ project_classic_title }}</a></h4>
+              <div class="project-classic-tag">{{ project_classic_tag }}</div>
             </div>
           </div>
         </article>
       </div>
       <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".1s">
-        <article class="project-classic box-md"><img src="images/project-2-370x262.jpg" alt="" width="370" height="262"/>
+        <article class="project-classic box-md"><img src="{% static 'images/project-2-370x262.jpg' %}" alt="" width="370" height="262"/>
           <div class="project-classic-caption">
             <div>
-              <h4 class="project-classic-title"><a href="#">Fabricator</a></h4>
-              <div class="project-classic-tag">Web Development</div>
+              <h4 class="project-classic-title"><a href="#">{{ project_classic_title_2 }}</a></h4>
+              <div class="project-classic-tag">{{ project_classic_tag_2 }}</div>
             </div>
           </div>
         </article>
       </div>
       <div class="col-sm-6 col-md-4 wow blurIn">
-        <article class="project-classic box-md"><img src="images/project-3-370x262.jpg" alt="" width="370" height="262"/>
+        <article class="project-classic box-md"><img src="{% static 'images/project-3-370x262.jpg' %}" alt="" width="370" height="262"/>
           <div class="project-classic-caption">
             <div>
-              <h4 class="project-classic-title"><a href="#">Fresh Market</a></h4>
-              <div class="project-classic-tag">SEO</div>
+              <h4 class="project-classic-title"><a href="#">{{ project_classic_title_3 }}</a></h4>
+              <div class="project-classic-tag">{{ project_classic_tag_3 }}</div>
             </div>
           </div>
         </article>
       </div>
       <div class="col-sm-6 col-md-4 wow blurIn">
-        <article class="project-classic box-md"><img src="images/project-4-370x262.jpg" alt="" width="370" height="262"/>
+        <article class="project-classic box-md"><img src="{% static 'images/project-4-370x262.jpg' %}" alt="" width="370" height="262"/>
           <div class="project-classic-caption">
             <div>
-              <h4 class="project-classic-title"><a href="#">Accessories Inc.</a></h4>
-              <div class="project-classic-tag">Online Marketing</div>
+              <h4 class="project-classic-title"><a href="#">{{ project_classic_title_4 }}</a></h4>
+              <div class="project-classic-tag">{{ project_classic_tag_4 }}</div>
             </div>
           </div>
         </article>
       </div>
       <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".1s">
-        <article class="project-classic box-md"><img src="images/project-5-370x262.jpg" alt="" width="370" height="262"/>
+        <article class="project-classic box-md"><img src="{% static 'images/project-5-370x262.jpg' %}" alt="" width="370" height="262"/>
           <div class="project-classic-caption">
             <div>
-              <h4 class="project-classic-title"><a href="#">Corpadvise</a></h4>
-              <div class="project-classic-tag">SMM</div>
+              <h4 class="project-classic-title"><a href="#">{{ project_classic_title_5 }}</a></h4>
+              <div class="project-classic-tag">{{ project_classic_tag_5 }}</div>
             </div>
           </div>
         </article>
       </div>
       <div class="col-sm-6 col-md-4 wow blurIn" data-wow-delay=".2s">
-        <article class="project-classic box-md"><img src="images/project-6-370x262.jpg" alt="" width="370" height="262"/>
+        <article class="project-classic box-md"><img src="{% static 'images/project-6-370x262.jpg' %}" alt="" width="370" height="262"/>
           <div class="project-classic-caption">
             <div>
-              <h4 class="project-classic-title"><a href="#">Greenbiz</a></h4>
-              <div class="project-classic-tag">Branding</div>
+              <h4 class="project-classic-title"><a href="#">{{ project_classic_title_6 }}</a></h4>
+              <div class="project-classic-tag">{{ project_classic_tag_6 }}</div>
             </div>
           </div>
         </article>
       </div>
     </div>
   </div>
-</section><a class="section section-banner" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" style="background-image: url(images/banner/background-03-1920x310.jpg); background-image: -webkit-image-set( url(images/banner/background-03-1920x310.jpg) 1x, url(images/banner/background-03-3840x620.jpg) 2x )" target="_blank"><img src="images/banner/foreground-03-1600x310.png" srcset="images/banner/foreground-03-1600x310.png 1x, images/banner/foreground-03-3200x620.png 2x" alt="" width="1600" height="310"></a>
+</section> <!-- <a class="section section-banner" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" style="background-image: url(images/banner/background-03-1920x310.jpg); background-image: -webkit-image-set( url(images/banner/background-03-1920x310.jpg) 1x, url(images/banner/background-03-3840x620.jpg) 2x )" target="_blank"><img src="{% static 'images/banner/foreground-03-1600x310.png' %}" srcset="images/banner/foreground-03-1600x310.png 1x, images/banner/foreground-03-3200x620.png 2x" alt="" width="1600" height="310"></a> -->
 {% endblock %}
