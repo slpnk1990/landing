@@ -16,10 +16,9 @@ class HomePage(models.Model):
         return '{}'.format(self.key)
         
 class Menu(models.Model):
-    title = models.CharField(max_length=80, db_index=True)
     key = models.CharField(max_length=150, db_index=True, unique=True)
+    value = models.TextField(blank=True, max_length=500, db_index=True)
     link = models.CharField(max_length=80, db_index=True, unique=True)
-    order = models.IntegerField(db_index=True, unique=True)
     date_pub = models.DateTimeField(auto_now=True)
 
 class ImageAsset(models.Model):

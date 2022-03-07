@@ -44,27 +44,27 @@
                   <div class="rd-navbar-nav-container">
                     <!-- RD Navbar Nav-->
                     <ul class="rd-navbar-nav">
-                      <li class="rd-nav-item active"><a class="rd-nav-link" href="{% url 'home' %}">Home</a>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'home' %}">{{ rd_nav_item_1 }}</a>
                       </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'about' %}">About</a>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'about' %}">{{ rd_nav_item_2 }}</a>
                       </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'contact' %}">Contacts</a>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'contact' %}">{{ rd_nav_item_3 }}</a>
                       </li>
                     </ul>
                     <ul class="contacts-classic">
                       <li>
-                        <div class="contacts-classic-title">Phone:</div><a href="tel:#">+1 (409) 987–5874</a>
+                        <div class="contacts-classic-title">{{ contacts_classic_title_1 }}</div><a href="tel:#">{{ contacts_classic_title_1_1 }}</a>
                       </li>
                       <li>
-                        <div class="contacts-classic-title">E-mail:</div><a href="mailTo:#">info@demolink.org</a>
+                        <div class="contacts-classic-title">{{ contacts_classic_title_2 }}</div><a href="mailTo:#">{{ contacts_classic_title_2_1 }}</a>
                       </li>
                       <li>
-                        <div class="contacts-classic-title">Follow Us:</div>
+                        <div class="contacts-classic-title">{{ contacts_classic_title_3 }}</div>
                         <ul class="list-inline list-social list-inline-sm">
-                          <li><a class="icon fa fa-linkedin" href="#"></a></li>
-                          <li><a class="icon fa fa-twitter" href="#"></a></li>
-                          <li><a class="icon fa fa-facebook" href="#"></a></li>
-                          <li><a class="icon fa fa-instagram" href="#"></a></li>
+                          <li><a class="icon fa fa-linkedin" href="{{ fa_linkedin }}"></a></li>
+                          <li><a class="icon fa fa-twitter" href="{{ fa_twitter }}"></a></li>
+                          <li><a class="icon fa fa-facebook" href="{{ fa_facebook }}"></a></li>
+                          <li><a class="icon fa fa-instagram" href="{{ fa_instagram }}"></a></li>
                         </ul>
                       </li>
                     </ul>

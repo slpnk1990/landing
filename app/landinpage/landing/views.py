@@ -7,6 +7,7 @@ from .models import *
 def content (request):
     return render(request, 'landing/index.html',
     context={
+        #Home Page
         'title_style_1': HomePage.objects.get(key='title_style_1').value,
         'title_style_2': HomePage.objects.get(key='title_style_2').value,
         'button_button_default': HomePage.objects.get(key='button_button_default').value,
@@ -38,6 +39,8 @@ def content (request):
         'project_classic_tag_5': HomePage.objects.get(key='project_classic_tag_5').value,
         'project_classic_title_6': HomePage.objects.get(key='project_classic_title_6').value,
         'project_classic_tag_6': HomePage.objects.get(key='project_classic_tag_6').value,
+        
+        # Footer
         'base_preloader_title': HomePage.objects.get(key='base_preloader_title').value,
         'base_subtitle_classic': HomePage.objects.get(key='base_subtitle_classic').value,
         'base_d_inline_block': HomePage.objects.get(key='base_d_inline_block').value,
@@ -52,12 +55,29 @@ def content (request):
         'base_rights_wow_4': HomePage.objects.get(key='base_rights_wow_4').value,
         'base_rights_wow_5': HomePage.objects.get(key='base_rights_wow_5').value,
 
+        # Menu
+        'rd_nav_item_1': Menu.objects.get(key='rd_nav_item_1').value,
+        'rd_nav_item_2': Menu.objects.get(key='rd_nav_item_2').value,
+        'rd_nav_item_3': Menu.objects.get(key='rd_nav_item_3').value,
+        'contacts_classic_title_1': Menu.objects.get(key='contacts_classic_title_1').value,
+        'contacts_classic_title_1_1': Menu.objects.get(key='contacts_classic_title_1_1').value,
+        'contacts_classic_title_2': Menu.objects.get(key='contacts_classic_title_2').value,
+        'contacts_classic_title_2_1': Menu.objects.get(key='contacts_classic_title_2_1').value,
+        'contacts_classic_title_3': Menu.objects.get(key='contacts_classic_title_3').value,
+        #'fa_linkedin': Menu.objects.get(key='fa_linkedin').link,
+        #'fa_twitter': Menu.objects.get(key='fa_twitter').link,
+        #'fa_facebook': Menu.objects.get(key='fa_facebook').link,
+        #'fa_instagram': Menu.objects.get(key='fa_instagram').link,
+
+
     })
     
 
 def about (request):
     return render(request, 'landing/about.html', 
     context={
+
+        # About Page
         'title': AboutUSModel.objects.get(key='title').value,
         'sec_2_subtitle': AboutUSModel.objects.get(key='sec_2_subtitle').value,
         'wow_fadeInLeft': AboutUSModel.objects.get(key='wow_fadeInLeft').value,
@@ -86,6 +106,8 @@ def about (request):
         'team_classic_status_2': AboutUSModel.objects.get(key='team_classic_status_2').value,
         'team_classic_name_3': AboutUSModel.objects.get(key='team_classic_name_3').value,
         'team_classic_status_3': AboutUSModel.objects.get(key='team_classic_status_3').value,
+        
+        #Footer
         'base_preloader_title': HomePage.objects.get(key='base_preloader_title').value,
         'base_subtitle_classic': HomePage.objects.get(key='base_subtitle_classic').value,
         'base_d_inline_block': HomePage.objects.get(key='base_d_inline_block').value,
@@ -99,12 +121,26 @@ def about (request):
         'base_rights_wow_3': HomePage.objects.get(key='base_rights_wow_3').value,
         'base_rights_wow_4': HomePage.objects.get(key='base_rights_wow_4').value,
         'base_rights_wow_5': HomePage.objects.get(key='base_rights_wow_5').value,
+
+        # Menu
+        'rd_nav_item_1': Menu.objects.get(key='rd_nav_item_1').value,
+        'rd_nav_item_2': Menu.objects.get(key='rd_nav_item_2').value,
+        'rd_nav_item_3': Menu.objects.get(key='rd_nav_item_3').value,
+        'contacts_classic_title_1': Menu.objects.get(key='contacts_classic_title_1').value,
+        'contacts_classic_title_1_1': Menu.objects.get(key='contacts_classic_title_1_1').value,
+        'contacts_classic_title_2': Menu.objects.get(key='contacts_classic_title_2').value,
+        'contacts_classic_title_2_1': Menu.objects.get(key='contacts_classic_title_2_1').value,
+        'contacts_classic_title_3': Menu.objects.get(key='contacts_classic_title_3').value,
+        #'fa_linkedin': Menu.objects.get(key='fa_linkedin').link,
+        #'fa_twitter': Menu.objects.get(key='fa_twitter').link,
+        #'fa_facebook': Menu.objects.get(key='fa_facebook').link,
+        #'fa_instagram': Menu.objects.get(key='fa_instagram').link,
     })
 
 def contact (request):
     return render(request, 'landing/contacts.html',
     context={
-
+        # Contacts Page
         'title': ContactSModel.objects.get(key='title').value,
         'title_style_1': ContactSModel.objects.get(key='title_style_1').value,
         'contacts_modern_link': ContactSModel.objects.get(key='contacts_modern_link').value,
@@ -114,6 +150,7 @@ def contact (request):
         'contacts_modern_link_4': ContactSModel.objects.get(key='contacts_modern_link_4').value,
         'contacts_modern_link_5': ContactSModel.objects.get(key='contacts_modern_link_5').value,
 
+        # Footer
         'base_preloader_title': HomePage.objects.get(key='base_preloader_title').value,
         'base_subtitle_classic': HomePage.objects.get(key='base_subtitle_classic').value,
         'base_d_inline_block': HomePage.objects.get(key='base_d_inline_block').value,
@@ -127,5 +164,19 @@ def contact (request):
         'base_rights_wow_3': HomePage.objects.get(key='base_rights_wow_3').value,
         'base_rights_wow_4': HomePage.objects.get(key='base_rights_wow_4').value,
         'base_rights_wow_5': HomePage.objects.get(key='base_rights_wow_5').value,
+
+        # Menu
+        'rd_nav_item_1': Menu.objects.get(key='rd_nav_item_1').value,
+        'rd_nav_item_2': Menu.objects.get(key='rd_nav_item_2').value,
+        'rd_nav_item_3': Menu.objects.get(key='rd_nav_item_3').value,
+        'contacts_classic_title_1': Menu.objects.get(key='contacts_classic_title_1').value,
+        'contacts_classic_title_1_1': Menu.objects.get(key='contacts_classic_title_1_1').value,
+        'contacts_classic_title_2': Menu.objects.get(key='contacts_classic_title_2').value,
+        'contacts_classic_title_2_1': Menu.objects.get(key='contacts_classic_title_2_1').value,
+        'contacts_classic_title_3': Menu.objects.get(key='contacts_classic_title_3').value,
+        #'fa_linkedin': Menu.objects.get(key='fa_linkedin').link,
+        #'fa_twitter': Menu.objects.get(key='fa_twitter').link,
+        #'fa_facebook': Menu.objects.get(key='fa_facebook').link,
+        #'fa_instagram': Menu.objects.get(key='fa_instagram').link,
     })
     
