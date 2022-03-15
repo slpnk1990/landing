@@ -1,3 +1,4 @@
+from unicodedata import name
 from django.urls import path
 
 from .views import *
@@ -5,5 +6,6 @@ from .views import *
 urlpatterns = [
     path('', content, name='home'),
     path('about/', about, name='about'),
-    path('contact/', contact, name='contact')    
+    path('contact/', contact, name='contacts'),
+    #path('email/', email, name='email')
 ]
