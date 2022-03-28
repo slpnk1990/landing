@@ -1,11 +1,12 @@
 from unicodedata import name
 from django.urls import path
+from django.views.decorators.cache import cache_page
 
 from .views import *
 
 urlpatterns = [
-    path('', content, name='home'),
-    path('about/', about, name='about'),
-    path('contact/', contact, name='contacts'),
-    #path('email/', email, name='email')
+    path('', cache_page(60)(content), name='home'),
+    path('about/', cache_page(60)(about), name='about'),
+    path('contact/', cache_page(60)(contact), name='contacts'),
+    
 ]

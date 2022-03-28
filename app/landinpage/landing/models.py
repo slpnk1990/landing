@@ -4,6 +4,7 @@ from tabnanny import verbose
 from django.db import models
 from django.utils.html import mark_safe
 
+
 # Create your models here.
 class HomePage(models.Model):
     key = models.CharField(max_length=150, db_index=True, unique=True)
